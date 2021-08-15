@@ -1,0 +1,33 @@
+{
+  "name": "@masterchief01/portfolio",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:masterchief01/portfolio.git"
+  },
+  "author": "Pranjal Walia <pranjalwalia77@gmail.com>",
+  "license": "MIT",
+  "browserslist": "> 0.25%, not dead",
+  "scripts": {
+    "build": "gatsby build",
+    "dev": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "prepare": "husky install",
+    "lint-staged": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,css,json,md}": [
+      "prettier --write"
+    ],
+    "*.js": [
+      "eslint --fix"
+    ]
+  },
+  "devDependencies": {
+    "husky": "^7.0.1",
+    "lint-staged": "^11.1.2",
+    "prettier": "^2.3.2"
+  }
+}
