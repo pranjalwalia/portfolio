@@ -22,7 +22,7 @@ const StyledText = styled.div`
   ul.skills-list {
     display: grid;
     grid-template-columns: repeat(2, minmax(140px, 200px));
-    grid-gap: 0 10px;
+    grid-gap: 0 40px;
     padding: 0;
     margin: 20px 0 0 0;
     overflow: hidden;
@@ -126,7 +126,28 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'React', 'Eleventy', 'Vue', 'Node.js', 'WordPress'];
+  const skills = [
+    'JavaScript (ES6+,TypeScript)',
+    'Node.js (Express,Nest)',
+    'React',
+    'AWS Lambda,EC2',
+    'AWS S3,AppSync',
+    'AWS API Gateway',
+    'Cloud Formation/Cloud Watch',
+    'AWS SNS,IAM,Route53',
+    'NoSQL (DynamoDB,MongoDB)',
+    'SQL (PostgreSQL,MySQL)',
+    'docker,docker-compose',
+    'Jest, Cypress',
+    'webpack',
+    'React Native',
+    'GraphQL',
+    'Firebase/AWS Amplify',
+    'Jenkins,CircleCI,Actions',
+    'Nginx',
+  ];
+
+  const programmingLanguages = ['JavaScript', 'Python', 'Java', 'C++', 'C', 'MATLAB'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -136,13 +157,21 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Brittany and I enjoy creating things that live on the internet. My
-              interest in web development started back in 2012 when I decided to try editing custom
-              Tumblr themes — turns out hacking together a custom reblog button taught me a lot
-              about HTML &amp; CSS!
+              Hello! My name is Pranjal Walia and I'm a sophomore computer science undergrad,
+              currently pursuing as Integrated Masters in Technology (B.Tech + M.Tech) at
+              IIIT-Bangalore.
+              <br />
+              Backend Engineering, System Architecture, Developer Tooling are among a couple of
+              things that pique my interest.
             </p>
 
             <p>
+              I am a coding enthusiast and love to learn and enjoy implementing technology supported
+              solutions to the problems I face.
+            </p>
+
+            <p>I am currently looking for internship opportunities as a Software Developer</p>
+            {/* <p>
               Fast-forward to today, and I've had the privilege of working at{' '}
               <a href="https://us.mullenlowe.com/">an advertising agency</a>,{' '}
               <a href="https://starry.com/">a start-up</a>,{' '}
@@ -151,14 +180,19 @@ const About = () => {
               main focus these days is building accessible, inclusive products and digital
               experiences at <a href="https://upstatement.com/">Upstatement</a> for a variety of
               clients.
-            </p>
+            </p> */}
 
-            <p>Here are a few technologies I've been working with recently:</p>
+            <p>I'm familiar with the following languages:</p>
+            <ul className="skills-list">
+              {programmingLanguages &&
+                programmingLanguages.map((lang, i) => <li key={i}>{lang}</li>)}
+            </ul>
+            <hr />
+            <p>Here are a few technologies I've been working with:</p>
+            <ul className="skills-list">
+              {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
+            </ul>
           </div>
-
-          <ul className="skills-list">
-            {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
-          </ul>
         </StyledText>
 
         <StyledPic>
