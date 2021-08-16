@@ -116,3 +116,15 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Project dependencies
+.cache
+node_modules
+yarn-error.log
+package-lock.json
+
+# Build directory
+/public
+.DS_Store
+
+.vscode/
