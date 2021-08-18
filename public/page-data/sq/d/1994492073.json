@@ -1,1 +1,13 @@
-{"data":{"site":{"siteMetadata":{"defaultTitle":"Brittany Chiang","defaultDescription":"Brittany Chiang is a software engineer who specializes in building (and occasionally designing) exceptional digital experiences.","siteUrl":"https://brittanychiang.com","defaultImage":"/og.png","twitterUsername":"@bchiang7"}}}}
+{
+  "data": {
+    "site": {
+      "siteMetadata": {
+        "defaultTitle": "Pranjal Walia",
+        "defaultDescription": "Pranjal Walia is a software engineer with an interest in backend engineering, systems srchitecture and distiributed systems",
+        "siteUrl": "https://pranjalwalia.netlify.app",
+        "defaultImage": "/pranjalwalia.jpeg",
+        "twitterUsername": "@PranjalWalia"
+      }
+    }
+  }
+}
