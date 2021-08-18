@@ -1,16 +1,16 @@
 ---
 date: '1'
-title: 'Halcyon Theme'
+title: 'Skynet'
 cover: './halcyon.png'
-github: 'https://github.com/bchiang7/halcyon-site'
-external: 'https://halcyon-theme.netlify.com/'
+github: 'https://github.com/masterchief01/skynet'
+external: 'https://github.com/masterchief01/skynet'
 tech:
-  - VS Code
-  - Sublime Text
-  - Atom
-  - iTerm2
-  - Hyper
+  - Express
+  - MongoDB
+  - TypeScript
+  - gulp.js
+  - nodemailer
 showInProjects: true
 ---
 
-A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=brittanychiang.halcyon-vscode), [Package Control](https://packagecontrol.io/packages/Halcyon%20Theme), [Atom Package Manager](https://atom.io/themes/halcyon-syntax), and [npm](https://www.npmjs.com/package/hyper-halcyon-theme).
+A batteries included cloud ☁️ ephemeral storage and distribution server. Packed with scheduled cleanup jobs 📅 and loads of services, a snapchat, but for files if I may be so bold

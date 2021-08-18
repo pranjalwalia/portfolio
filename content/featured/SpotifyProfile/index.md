@@ -1,15 +1,14 @@
 ---
 date: '2'
-title: 'Spotify Profile'
+title: 'Scale.js'
 cover: './demo.png'
-github: 'https://github.com/bchiang7/spotify-profile'
-external: 'https://spotify-profile.herokuapp.com/'
+github: 'https://github.com/masterchief01/scale.js'
+external: 'https://github.com/masterchief01/scale.js'
 tech:
-  - React
   - Node.js
-  - Express
-  - Spotify Web API
+  - TypeScript
+  - parcel
 showInProjects: true
 ---
 
-A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.
+A bare bones web-framework that essentially replicates the core functionalities and concepts involved in developing a frontend framework or library for the web from scratch
