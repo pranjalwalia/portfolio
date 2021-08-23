@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import styled, { ThemeProvider } from 'styled-components';
+// eslint-disable-next-line no-unused-vars
 import { Head, Loader, Nav, Social, Email, Footer } from '@components';
 import { GlobalStyle, theme } from '@styles';
 
@@ -18,6 +19,7 @@ const StyledContent = styled.div`
 
 const Layout = ({ children, location }) => {
   const isHome = location.pathname === '/';
+  // eslint-disable-next-line no-unused-vars
   const [isLoading, setIsLoading] = useState(isHome);
 
   // Sets target="_blank" rel="noopener noreferrer" on external links
@@ -63,8 +65,18 @@ const Layout = ({ children, location }) => {
           <a className="skip-to-content" href="#content">
             Skip to Content
           </a>
+          <StyledContent>
+            <Nav isHome={isHome} />
+            <Social isHome={isHome} />
+            <Email isHome={isHome} />
 
-          {isLoading && isHome ? (
+            <div id="content">
+              {children}
+              <Footer />
+            </div>
+          </StyledContent>
+
+          {/* {isLoading && isHome ? (
             <Loader finishLoading={() => setIsLoading(false)} />
           ) : (
             <StyledContent>
@@ -77,7 +89,7 @@ const Layout = ({ children, location }) => {
                 <Footer />
               </div>
             </StyledContent>
-          )}
+          )} */}
         </ThemeProvider>
       </div>
     </>
