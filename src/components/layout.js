@@ -65,7 +65,7 @@ const Layout = ({ children, location }) => {
           <a className="skip-to-content" href="#content">
             Skip to Content
           </a>
-          <StyledContent>
+          {/* <StyledContent>
             <Nav isHome={isHome} />
             <Social isHome={isHome} />
             <Email isHome={isHome} />
@@ -74,9 +74,9 @@ const Layout = ({ children, location }) => {
               {children}
               <Footer />
             </div>
-          </StyledContent>
+          </StyledContent> */}
 
-          {/* {isLoading && isHome ? (
+          {isLoading && isHome ? (
             <Loader finishLoading={() => setIsLoading(false)} />
           ) : (
             <StyledContent>
@@ -89,7 +89,7 @@ const Layout = ({ children, location }) => {
                 <Footer />
               </div>
             </StyledContent>
-          )} */}
+          )}
         </ThemeProvider>
       </div>
     </>
